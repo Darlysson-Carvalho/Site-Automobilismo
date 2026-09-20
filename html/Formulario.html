@@ -1,27 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Darlysson Carvalho">
+    <meta name="description"
+        content="Pagina de formulario de inscrição para receber novidades sobre automobilismo, incluindo categorias como Fórmula 1, Rally, NASCAR e WEC.">
+    <meta name="keywords"
+        content="formulario, inscrição, automobilismo, novidades, categorias, Fórmula 1, Rally, NASCAR, WEC">
+    <title>Formulário de Inscrição</title>
 </head>
+
 <body>
     <h1>Formulários de Inscrições</h1>
-    <aside>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="Main.html">Home</a></li><br>
-                <li><a href="Evolucao.html">Evolução</a></li>
-                <li><a href="Formula1.html">Fórmula 1</a></li>
-                <li><a href="Rally.html">Rally</a></li>
-                <li><a href="NASCAR.html">NASCAR</a></li>
-                <li><a href="WEC.html">WEC</a></li>
-                <li><a href="Lendas.html">Lendas</a></li>
-                <li><a href="Pistas.html">Pistas</a></li>
-                <li><a href="Formulario.html">Formulário de Inscrição</a></li>
-                <li><a href="Tabela.html">Tabelas informativas</a></li>
-            </ul>
-        </aside>
-    
+    <hr>
+
+    <section>
+        <h2>Inscreva-se para Receber Novidades</h2>
+        <p>Preencha o formulário abaixo para se inscrever e marque as categorias de automobilismo sobre as quais você
+            quer receber conteúdo.</p>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" name="idade" required>
+            </p>
+
+            <p>
+                <label for="pais">País de residência:</label><br>
+                <select id="pais" name="pais" required>
+                    <option value="">Selecione</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="estados_unidos">Estados Unidos</option>
+                    <option value="reino_unido">Reino Unido</option>
+                    <option value="alemania">Alemanha</option>
+                    <option value="italia">Itália</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Quais categorias você quer acompanhar?</legend>
+
+                <input type="checkbox" id="cat-rally" name="categorias" value="rally">
+                <label for="cat-rally">Mundial de Rally (WRC)</label><br>
+
+                <input type="checkbox" id="cat-wec" name="categorias" value="wec">
+                <label for="cat-wec">Mundial de Endurance (WEC)</label><br>
+
+                <input type="checkbox" id="cat-nascar" name="categorias" value="nascar">
+                <label for="cat-nascar">NASCAR</label><br>
+
+                <input type="checkbox" id="cat-lemans" name="categorias" value="lemans">
+                <label for="cat-lemans">24 Horas de Le Mans</label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Frequência de contato desejada</legend>
+
+                <input type="checkbox" id="freq-semanal" name="frequencia" value="semanal">
+                <label for="freq-semanal">Resumo semanal</label><br>
+
+                <input type="checkbox" id="freq-corrida" name="frequencia" value="dia_de_corrida">
+                <label for="freq-corrida">Avisos em dias de corrida</label><br>
+
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                <label for="termos">Li e aceito os termos de uso e a política de privacidade.</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Confirmar Inscrição">
+                <input type="reset" value="Limpar Formulário">
+            </p>
+
+        </form>
+
+    </section>
+
+    <hr>
+
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="Main.html">Home</a></li><br>
+            <li><a href="Evolucao.html">Evolução</a></li>
+            <li><a href="Formula1.html">Fórmula 1</a></li>
+            <li><a href="Rally.html">Rally</a></li>
+            <li><a href="NASCAR.html">NASCAR</a></li>
+            <li><a href="WEC.html">WEC</a></li>
+            <li><a href="Lendas.html">Lendas</a></li>
+            <li><a href="Pistas.html">Pistas</a></li>
+            <li><a href="Formulario.html">Formulário de Inscrição</a></li>
+            <li><a href="Tabela.html">Tabelas informativas</a></li>
+        </ul>
+    </nav>
+
 </body>
+
 </html>
